@@ -1,0 +1,397 @@
+/*Estilos Globales*/
+body{
+  font: 14px 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 75%;
+	margin:auto;
+  overflow: hidden;
+  text-align: center;
+}
+.container2{
+  width: 50%;
+	margin:auto;
+  overflow: hidden;
+  text-align: center;
+}
+.button{
+  width: 87px;
+  padding: 15px 28px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+  color:white;
+  font-size: 16px;
+  border-radius: 24px;
+  text-decoration: none;
+  }
+  p.sectionNumber{
+    color:gray;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  h2{
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .iconSection{
+    width: 38px;
+    display: block;
+    margin: 0 auto;
+  }
+/*Header*/
+header{
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+nav a{
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 4px 9px 4px;;
+}
+nav a:hover{
+  opacity: 0.8;
+}
+.activo {
+  border-bottom: 4px solid white;
+  opacity: 1;
+}
+header ul{
+  padding: 0;
+  margin: 0;
+}
+header li{
+  float: left;
+  display:inline;
+  padding-left: 20px;
+}
+#logo{
+  float: left;
+  padding-top: 5px;
+}
+#logo img{
+  width: 32px;
+}
+nav{
+  float: right;
+  margin-top: 16px;
+}
+.navItem {
+    padding: 0px;
+    margin-left: 15px;
+}
+.hamburger {
+  float: right;
+  margin-top: 10px;
+  display: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 12px;
+  border-radius: 30px;
+
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*Welcome*/
+#cover{
+  background-image: url("../images/bg.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+#welcome{
+  color: white;
+}
+#welcome h1{
+  font-weight: 700;
+  font-size: 38px;
+  margin: auto 0px;
+}
+.container3{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+text-align: center;
+}
+
+
+/*About*/
+#about{
+background: #f7f7f7;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+p.aboutme{
+  color: gray;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+/*Services*/
+#services{
+  background: #eaeaea;
+}
+.bigBox{
+  display: flex;
+  justify-content: space-between;
+}
+.servicesBox{
+  display: inline-block;
+  width: 20%;
+  margin: 30px 0 30px 0;
+}
+.servicesBox img{
+width: 86px;
+}
+#services h5{
+  color: grey;
+  font-weight: normal;
+  font-size: 14px;
+}
+#services .servicesBox{
+  color: #474747;
+}
+#services .servicesBox:hover{
+  color: #00ACED;
+  transition: 200ms;
+}
+
+/*Skills*/
+#skills{
+background: #f7f7f7;
+}
+.bigBox{
+  display: flex;
+  justify-content: space-between;
+}
+.skillsBox{
+  display: inline-block;
+  width: 20%;
+  margin: 30px 0 30px 0;
+}
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 40%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.8;
+}
+
+/*Hire me*/
+#hireme{
+  text-align: center;
+  background-image: -moz-linear-gradient( 2deg, rgb(0,156,255) 0%, rgb(26,225,117) 100%);
+   background-image: -webkit-linear-gradient( 2deg, rgb(0,156,255) 0%, rgb(26,225,117) 100%);
+   background-image: -ms-linear-gradient( 2deg, rgb(0,156,255) 0%, rgb(26,225,117) 100%);
+  height: 140px;
+}
+#hireme .button-h{
+  padding: 15px 28px;
+  background: rgba(255, 255, 255, 0.3);
+  color:white;
+  font-size: 16px;
+  border-radius: 24px;
+  text-decoration: none;
+  }
+#hireme h3{
+  padding: 20px 0 10px 0;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 640px){
+  .container,.container2{
+    width: 90%;
+  }
+  header{
+    background: rgba(0, 0, 0, 0.0);
+  }
+  nav{
+  display: none;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+  #logo{
+  margin: 5px;
+  }
+  #logo img{
+    width: 50px;
+  }
+}
+
+/*Mouse animation*/
+.mouse-wrapper {
+  margin: 100px auto 50px auto;
+  display: block;
+  width: 28px;
+}
+.mouse {
+  width: 28px;
+  height: 45px;
+  border: 3px solid white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.mouse .mouse-scroll {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  top: 10px;
+  left: 12px;
+  -webkit-animation: scrolls 1.3s ease-out infinite;
+}
+@-webkit-keyframes scrolls{
+  0%{
+    top:10px;opacity:1;height:4px;
+  }
+  95%{
+    top:18px;opacity:0;height:10px;
+  }
+  100%{
+    top:8px;opacity:1;height:4px;
+  }
+}
+
+#skill-progress {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+
+
+
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: black;
+    background-color: black;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -7px;
+    right: 37px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

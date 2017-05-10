@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <link rel="shortcut icon" type="image/x-icon" href="images/fav.ico"/>
+
+		<title>JB - Design &amp Dev</title>
+	  <meta name="description" content="Integral design and Web development">
+	  <meta name="keywords" content="HTML,CSS,Photoshop,Illustrator,Brand,Industrial design,UI,UX">
+	  <meta name="author" content="Juan Cruz Budin">
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
+	  <link rel="stylesheet" href="css/estilos.css"/>
+
+	</head>
+	<body>
+		<div id="cover">
+			<header>
+				<div class="container">
+					<div id="logo">
+						<a href="index.html"><img src="images/logo.png" alt="logo Jb"></a>
+					</div>
+					<nav>
+						<ul class="navList">
+							<li class="navItem"><a id="about-btn" href="#about">About</a></li>
+							<li class="navItem"><a id="services-btn" href="#services">Services</a></li>
+							<li class="navItem"><a id="skills-btn" href="#skills">Skills</a></li>
+							<li class="navItem"><a id="portfolio-btn" href="#portfolio">Portfolio</a></li>
+							<li class="navItem"><a id="contact-btn" href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="hamburger .closebtn" onclick="openNav()">
+					  <div class="bar1"></div>
+					  <div class="bar2"></div>
+					  <div class="bar3"></div>
+					</div>
+				</div>
+			</header>
+
+			<div id="myNav" class="overlay">
+
+			  <!-- Button to close the overlay navigation -->
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			  <!-- Overlay content -->
+			  <div class="overlay-content">
+			    <a id="about-btn" href="#about">About</a>
+			    <a href="#">Services</a>
+			    <a href="#">Clients</a>
+			    <a href="#">Contact</a>
+			  </div>
+
+			</div>
+
+
+
+			<section id="welcome">
+				<div class="container3">
+					<h1>Hello and Welcome!</h1>
+					<!-- <h1>I'm an industrial designer based in Argentina<br>who have a passion for web design  & code.</h1> -->
+					<a id="read-more-btn" href="#about" class="button">Read More</a>
+					<div class="mouse-wrapper">
+						<div class="mouse">
+							<div class="mouse-scroll"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<section id="about">
+			<div class="container2">
+				<p class="sectionNumber">#1</p>
+				<h2>About me:</h2>
+				<img class="iconSection" src="images/aboutme.png" alt="About me icon">
+					<p class="aboutme">Since childhood I feel the need to create things. At age 15 i start using photoshop and corel draw, exploring different areas of graphic design. Perform various UI / UX projects and logo design for websites and companies. To the 17 begins to learn basic concepts of web programming (HTML&ampCSS,Js). At 18 I started my career as an industrial designer at the National University of Córdoba. To this day (i’m 23), I'm doing my industrial design degree thesis and also keep doing Frontend dev courses to deepen my knowledge.
+			</div>
+		</section>
+
+		<section id="services">
+			<div class="container">
+				<p class="sectionNumber">#2</p>
+				<h2>My Services:</h2>
+				<img class="iconSection" src="images/services.png" alt="Services icon">
+				<div class="bigBox">
+					<div class="servicesBox">
+						<img src="images/id.png" alt="industrial design">
+						<h3>Industrial<br>Design</h3>
+						<h5>Development of industrial projects from concept to manufacturing.</h5>
+					</div>
+					<div class="servicesBox">
+						<img src="images/ui.png" alt="UI/UX design">
+						<h3>UI&ampUX<br>Design</h3>
+						<h5>Development of industrial projects from concept to manufacturing.</h5>
+					</div>
+					<div class="servicesBox">
+						<img src="images/wd.png" alt="web development">
+						<h3>Web<br>Development</h3>
+						<h5>Development of industrial projects from concept to manufacturing.</h5>
+					</div>
+					<div class="servicesBox">
+						<img src="images/ic.png" alt="corporate identity">
+						<h3>Corporate<br>Identity</h3>
+						<h5>Development of industrial projects from concept to manufacturing.</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills">
+			<div class="container">
+				<p class="sectionNumber">#3</p>
+				<h2>My Skills:</h2>
+				<img class="iconSection" src="images/skills.png" alt="Skills icon">
+				<div class="bigBox">
+					<div class="skillsBox tooltip">
+						<span class="tooltiptext">Development of industrial projects from concept to manufacturing.</span>
+						<!-- <div id="skill-progress"></div> -->
+						<h3>html&ampcss</h3>
+					</div>
+					<div class="skillsBox tooltip">
+						<span class="tooltiptext">Development of industrial projects from concept to manufacturing.</span>
+						<!-- <div id="skill-progress"></div> -->
+						<h3>Photoshop</h3>
+					</div>
+					<div class="skillsBox tooltip">
+						<span class="tooltiptext">Development of industrial projects from concept to manufacturing.</span>
+						<!-- <div id="skill-progress"></div> -->
+						<h3>Illustrator</h3>
+					</div>
+					<div class="skillsBox tooltip">
+						<span class="tooltiptext">Development of industrial projects from concept to manufacturing.</span>
+						<!-- <div id="skill-progress"></div> -->
+						<h3>Solidworks</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="hireme">
+				<h3>I'm currently available for freelance work.</h3>
+				<a href="#contact" id="hireme-btn" class="button-h">Hire me!</a>
+		</section>
+
+		<section id="portfolio">
+			<div class="container">
+				<p class="sectionNumber">#4</p>
+				<h2>Some Projects:</h2>
+				<img class="iconSection" src="images/projects.png" alt="projects icon">
+				<div class="navPortolio">
+					<button type="button" class="navPortfolioItem">all</button>
+					<button type="button" class="navPortfolioItem">identity</button>
+					<button type="button" class="navPortfolioItem">product design</button>
+					<button type="button" class="navPortfolioItem">logo</button>
+					<button type="button" class="navPortfolioItem">web design</button>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container">
+				<p class="sectionNumber">#5</p>
+				<h2>Contact me:</h2>
+				<img class="iconSection" src="images/contact.png" alt="contact icon">
+				<form action="/action_page.php" method="get">
+					<div class="contactLeft">
+						<p>Name</p>
+						<input type="text" placeholder="Your name"><br>
+						<p>Email address</p>
+						<input type="email" placeholder="Your email"><br>
+						<p>we'll never share your email with anyone else.</p>
+						<button type="submit" class="buttonContact">Send Message</button>
+					</div>
+					<div class="contactRight">
+						<input type="text" placeholder="Message...">
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section id="social">
+			<div class="container">
+				<div class="socialIconsContainer">
+						<div class="socialIcon tooltip">
+							<a href="#"><img src="images/insta.png" width="26px" alt="Instagram"></a><span class="tooltiptext">@juancruzbud</span>
+						</div>
+						<div class="socialIcon tooltip">
+							<a href="#"><img src="images/twitter.png" width="26px" alt="Twitter"></a><span class="tooltiptext">@juancruzbud</span>
+						</div>
+						<div class="socialIcon tooltip">
+							<a href="#"><img src="images/behance.png" width="26px" alt="Behance"></a><span class="tooltiptext">Juancb</span>
+						</div>
+						<div class="socialIcon tooltip">
+							<a href="#"><img src="images/linkedin.png" width="26px" alt="Linkedin"></a><span class="tooltiptext">jcruzbudin</span>
+						</div>
+					</div>
+					<div class="infoContact">
+						<img src="images/Phone-64.png" width="18px" height="18px" alt="Phone"></a>
+						<p>&nbsp;0358 - 6 023 603 & <a href="mailto: hello@juanbud.com">hello@juanbud.com</a></p>
+						<img src="images/Map Marker-64.png" width="18px" height="18px" alt="Direction">
+						<p>&nbsp;1234 Street Name, City Name</p>
+					</div>
+					<button onclick="topFunction()" id="totop-btn" title="Go to top">Top</button>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="copyLeft">
+					<p>© 2017 Juan Cruz Budin. All rights reserved.</p>
+				</div>
+				<div class="copyRight">
+					<p>Designed with <span>♥</span></p>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/progressbar.js"></script>
+	<script src="js/noframework.waypoints.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+</html>
