@@ -1661,7 +1661,7 @@ var Tweenable = (function () {
 var Shape = require('./shape');
 var utils = require('./utils');
 
-var Circle = function Circle(container, options) {
+var Circle = function Circle(skill-progress, options) {
     // Use two arcs to form a circle
     // See this answer http://stackoverflow.com/a/10477334/1446092
     this._pathTemplate =
@@ -1669,7 +1669,7 @@ var Circle = function Circle(container, options) {
         ' a {radius},{radius} 0 1 1 0,{2radius}' +
         ' a {radius},{radius} 0 1 1 0,-{2radius}';
 
-    this.containerAspectRatio = 1;
+    this.skill-progressAspectRatio = 1;
 
     Shape.apply(this, arguments);
 };
@@ -1703,7 +1703,7 @@ module.exports = Circle;
 var Shape = require('./shape');
 var utils = require('./utils');
 
-var Line = function Line(container, options) {
+var Line = function Line(skill-progress, options) {
     this._pathTemplate = 'M 0,{center} L 100,{center}';
     Shape.apply(this, arguments);
 };
@@ -1928,14 +1928,14 @@ var Shape = require('./shape');
 var Circle = require('./circle');
 var utils = require('./utils');
 
-var SemiCircle = function SemiCircle(container, options) {
+var SemiCircle = function SemiCircle(skill-progress, options) {
     // Use one arc to form a SemiCircle
     // See this answer http://stackoverflow.com/a/10477334/1446092
     this._pathTemplate =
         'M 50,50 m -{radius},0' +
         ' a {radius},{radius} 0 1 1 {2radius},0';
 
-    this.containerAspectRatio = 2;
+    this.skill-progressAspectRatio = 2;
 
     Shape.apply(this, arguments);
 };
@@ -1947,20 +1947,20 @@ SemiCircle.prototype._initializeSvg = function _initializeSvg(svg, opts) {
     svg.setAttribute('viewBox', '0 0 100 50');
 };
 
-SemiCircle.prototype._initializeTextContainer = function _initializeTextContainer(
+SemiCircle.prototype._initializeTextskill-progress = function _initializeTextskill-progress(
     opts,
-    container,
-    textContainer
+    skill-progress,
+    textskill-progress
 ) {
     if (opts.text.style) {
         // Reset top style
-        textContainer.style.top = 'auto';
-        textContainer.style.bottom = '0';
+        textskill-progress.style.top = 'auto';
+        textskill-progress.style.bottom = '0';
 
         if (opts.text.alignToBottom) {
-            utils.setStyle(textContainer, 'transform', 'translate(-50%, 0)');
+            utils.setStyle(textskill-progress, 'transform', 'translate(-50%, 0)');
         } else {
-            utils.setStyle(textContainer, 'transform', 'translate(-50%, 50%)');
+            utils.setStyle(textskill-progress, 'transform', 'translate(-50%, 50%)');
         }
     }
 };
@@ -1979,7 +1979,7 @@ var utils = require('./utils');
 
 var DESTROYED_ERROR = 'Object is destroyed';
 
-var Shape = function Shape(container, opts) {
+var Shape = function Shape(skill-progress, opts) {
     // Throw a better error if progress bars are not initialized with `new`
     // keyword
     if (!(this instanceof Shape)) {
@@ -2016,7 +2016,7 @@ var Shape = function Shape(container, opts) {
                     value: 'translate(-50%, -50%)'
                 }
             },
-            autoStyleContainer: true,
+            autoStyleskill-progress: true,
             alignToBottom: true,
             value: null,
             className: 'progressbar-text'
@@ -2040,20 +2040,20 @@ var Shape = function Shape(container, opts) {
     var svgView = this._createSvgView(this._opts);
 
     var element;
-    if (utils.isString(container)) {
-        element = document.querySelector(container);
+    if (utils.isString(skill-progress)) {
+        element = document.querySelector(skill-progress);
     } else {
-        element = container;
+        element = skill-progress;
     }
 
     if (!element) {
-        throw new Error('Container does not exist: ' + container);
+        throw new Error('skill-progress does not exist: ' + skill-progress);
     }
 
-    this._container = element;
-    this._container.appendChild(svgView.svg);
+    this._skill-progress = element;
+    this._skill-progress.appendChild(svgView.svg);
     if (this._opts.warnings) {
-        this._warnContainerAspectRatio(this._container);
+        this._warnskill-progressAspectRatio(this._skill-progress);
     }
 
     if (this._opts.svgStyle) {
@@ -2143,8 +2143,8 @@ Shape.prototype.setText = function setText(newText) {
 
     if (this.text === null) {
         // Create new text node
-        this.text = this._createTextContainer(this._opts, this._container);
-        this._container.appendChild(this.text);
+        this.text = this._createTextskill-progress(this._opts, this._skill-progress);
+        this._skill-progress.appendChild(this.text);
     }
 
     // Remove previous text and add new
@@ -2227,29 +2227,29 @@ Shape.prototype._createPathElement = function _createPathElement(pathString, opt
     return path;
 };
 
-Shape.prototype._createTextContainer = function _createTextContainer(opts, container) {
-    var textContainer = document.createElement('div');
-    textContainer.className = opts.text.className;
+Shape.prototype._createTextskill-progress = function _createTextskill-progress(opts, skill-progress) {
+    var textskill-progress = document.createElement('div');
+    textskill-progress.className = opts.text.className;
 
     var textStyle = opts.text.style;
     if (textStyle) {
-        if (opts.text.autoStyleContainer) {
-            container.style.position = 'relative';
+        if (opts.text.autoStyleskill-progress) {
+            skill-progress.style.position = 'relative';
         }
 
-        utils.setStyles(textContainer, textStyle);
+        utils.setStyles(textskill-progress, textStyle);
         // Default text color to progress bar's color
         if (!textStyle.color) {
-            textContainer.style.color = opts.color;
+            textskill-progress.style.color = opts.color;
         }
     }
 
-    this._initializeTextContainer(opts, container, textContainer);
-    return textContainer;
+    this._initializeTextskill-progress(opts, skill-progress, textskill-progress);
+    return textskill-progress;
 };
 
 // Give custom shapes possibility to modify text element
-Shape.prototype._initializeTextContainer = function(opts, container, element) {
+Shape.prototype._initializeTextskill-progress = function(opts, skill-progress, element) {
     // By default, no-op
     // Custom shapes should respect API options, such as text.style
 };
@@ -2262,18 +2262,18 @@ Shape.prototype._trailString = function _trailString(opts) {
     throw new Error('Override this function for each progress bar');
 };
 
-Shape.prototype._warnContainerAspectRatio = function _warnContainerAspectRatio(container) {
-    if (!this.containerAspectRatio) {
+Shape.prototype._warnskill-progressAspectRatio = function _warnskill-progressAspectRatio(skill-progress) {
+    if (!this.skill-progressAspectRatio) {
         return;
     }
 
-    var computedStyle = window.getComputedStyle(container, null);
+    var computedStyle = window.getComputedStyle(skill-progress, null);
     var width = parseFloat(computedStyle.getPropertyValue('width'), 10);
     var height = parseFloat(computedStyle.getPropertyValue('height'), 10);
-    if (!utils.floatEquals(this.containerAspectRatio, width / height)) {
+    if (!utils.floatEquals(this.skill-progressAspectRatio, width / height)) {
         console.warn(
-            'Incorrect aspect ratio of container',
-            '#' + container.id,
+            'Incorrect aspect ratio of skill-progress',
+            '#' + skill-progress.id,
             'detected:',
             computedStyle.getPropertyValue('width') + '(width)',
             '/',
@@ -2284,7 +2284,7 @@ Shape.prototype._warnContainerAspectRatio = function _warnContainerAspectRatio(c
 
         console.warn(
             'Aspect ratio of should be',
-            this.containerAspectRatio
+            this.skill-progressAspectRatio
         );
     }
 };

@@ -15,12 +15,14 @@
 	  <link rel="stylesheet" href="css/estilos.css"/>
 
 	</head>
+
 	<body>
+
 		<div id="cover">
 			<header>
 				<div class="container">
 					<div id="logo">
-						<a href="index.html"><img src="images/logo.png" alt="logo Jb"></a>
+						<a href="index.html"><i class="icon-logo"></i></a>
 					</div>
 					<nav>
 						<ul class="navList">
@@ -48,13 +50,12 @@
 			</section>
 		</div>
 
-
 		<section id="about">
 			<div class="container2">
 				<p class="sectionNumber">#1</p>
 				<h2>About me:</h2>
-				<img class="iconSection" src="images/aboutme.png" alt="About me icon">
-					<p class="aboutme">Since childhood I feel the need to create things. At age 15 i start using photoshop and corel draw, exploring different areas of graphic design. Perform various UI / UX projects and logo design for websites and companies. To the 17 begins to learn basic concepts of web programming (HTML&ampCSS,Js). At 18 I started my career as an industrial designer at the National University of Córdoba. To this day (i’m 23), I'm doing my industrial design degree thesis and also keep doing Frontend dev courses to deepen my knowledge.
+				<i class="icon-about"></i>
+				<p class="aboutme">Since childhood I feel the need to create things. At age 15 i start using photoshop and corel draw, exploring different areas of graphic design. Perform various UI / UX projects and logo design for websites and companies. To the 17 begins to learn basic concepts of web programming (HTML&ampCSS,Js). At 18 I started my career as an industrial designer at the National University of Córdoba. To this day (i’m 23), I'm doing my industrial design degree thesis and also keep doing Frontend dev courses to deepen my knowledge.
 			</div>
 		</section>
 
@@ -62,7 +63,7 @@
 			<div class="container">
 				<p class="sectionNumber">#2</p>
 				<h2>My Services:</h2>
-				<img class="iconSection" src="images/services.png" alt="Services icon">
+				<i class="icon-services"></i>
 				<div class="bigBox">
 					<div class="servicesBox">
 						<i class="icon-di"></i>
@@ -92,7 +93,7 @@
 			<div class="container">
 				<p class="sectionNumber">#3</p>
 				<h2>My Skills:</h2>
-				<img class="iconSection" src="images/skills.png" alt="Skills icon">
+				<i class="icon-skills"></i>
 				<div class="bigBox">
 					<div class="skillsBox tooltip">
 						<span class="tooltiptext">Development of industrial projects from concept to manufacturing.</span>
@@ -127,62 +128,78 @@
 			<div class="container">
 				<p class="sectionNumber">#4</p>
 				<h2>Some Projects:</h2>
-				<img class="iconSection" src="images/projects.png" alt="projects icon">
+				<i class="icon-projects"></i>
 				<div class="navPortolio">
-					<button type="button" class="navPortfolioItem">all</button>
-					<button type="button" class="navPortfolioItem">identity</button>
-					<button type="button" class="navPortfolioItem">product design</button>
-					<button type="button" class="navPortfolioItem">logo</button>
+					<button type="button" class="navPortfolioItem">all</button><span>/</span>
+					<button type="button" class="navPortfolioItem">identity</button><span>/</span>
+					<button type="button" class="navPortfolioItem">product design</button><span>/</span>
+					<button type="button" class="navPortfolioItem">logo</button><span>/</span>
 					<button type="button" class="navPortfolioItem">web design</button>
 				</div>
-
 			</div>
+			<div class="portfolioBox"></div>
+			<div class="portfolioBox"></div>
+			<div class="portfolioBox"></div>
+			<div class="portfolioBox"></div>
+			<div class="portfolioBox"></div>
+			<div class="portfolioBox"></div>
 		</section>
 
 		<section id="contact">
 			<div class="container">
 				<p class="sectionNumber">#5</p>
 				<h2>Contact me:</h2>
-				<img class="iconSection" src="images/contact.png" alt="contact icon">
+				<i class="icon-contact"></i>
+				<p class="ContactDescription">Get in touch with me. Feel free to use the contact below :)</p>
 				<form action="/action_page.php" method="get">
+
 					<div class="contactLeft">
 						<p>Name</p>
 						<input type="text" placeholder="Your name"><br>
 						<p>Email address</p>
 						<input type="email" placeholder="Your email"><br>
-						<p>we'll never share your email with anyone else.</p>
+						<p class="chiquito">we'll never share your email with anyone else.</p>
 						<button type="submit" class="buttonContact">Send Message</button>
 					</div>
+
 					<div class="contactRight">
-						<input type="text" placeholder="Message...">
+						<textarea name="comentarios" rows="9" placeholder="Message...."></textarea>
 					</div>
+
 				</form>
+
 			</div>
 		</section>
 
 		<section id="social">
 			<div class="container">
 				<div class="socialIconsContainer">
-						<div class="socialIcon tooltip">
-							<a href="#"><img src="images/insta.png" width="26px" alt="Instagram"></a><span class="tooltiptext">@juancruzbud</span>
-						</div>
-						<div class="socialIcon tooltip">
-							<a href="#"><img src="images/twitter.png" width="26px" alt="Twitter"></a><span class="tooltiptext">@juancruzbud</span>
-						</div>
-						<div class="socialIcon tooltip">
-							<a href="#"><img src="images/behance.png" width="26px" alt="Behance"></a><span class="tooltiptext">Juancb</span>
-						</div>
-						<div class="socialIcon tooltip">
-							<a href="#"><img src="images/linkedin.png" width="26px" alt="Linkedin"></a><span class="tooltiptext">jcruzbudin</span>
-						</div>
+					<div class="socialIcon tooltip">
+						<a href="#"><i class="icon-facebook"></i></a><span class="tooltiptext">Juan Cruz Budin</span>
 					</div>
-					<div class="infoContact">
-						<img src="images/Phone-64.png" width="18px" height="18px" alt="Phone"></a>
-						<p>&nbsp;0358 - 6 023 603 & <a href="mailto: hello@juanbud.com">hello@juanbud.com</a></p>
-						<img src="images/Map Marker-64.png" width="18px" height="18px" alt="Direction">
-						<p>&nbsp;1234 Street Name, City Name</p>
+					<div class="socialIcon tooltip">
+						<a href="#"><i class="icon-twitter"></i></a><span class="tooltiptext">@juancruzbud</span>
 					</div>
-					<button onclick="topFunction()" id="totop-btn" title="Go to top">Top</button>
+					<div class="socialIcon tooltip">
+						<a href="#"><i class="icon-linkedin2"></i></a><span class="tooltiptext">jcruzbudin</span>
+					</div>
+					<div class="socialIcon tooltip">
+						<a href="#"><i class="icon-dribbble"></i></a><span class="tooltiptext">juancruzbud</span>
+					</div>
+					<div class="socialIcon tooltip">
+						<a href="#"><i class="icon-instagram"></i></a><span class="tooltiptext">@juancruzbud</span>
+					</div>
+					<div class="socialIcon tooltip">
+						<a href="#"><i class="icon-behance"></i></a><span class="tooltiptext">Juancb</span>
+					</div>
+				</div>
+				<div class="infoContact">
+					<i class="icon-phone"></i><p>&nbsp;0358 - 6 023 603 & <a href="mailto: hello@juanbud.com">hello@juanbud.com</a></p><br>
+					<i class="icon-address"></i><p>&nbsp;1234 Street Name, City Name</p>
+				</div>
+				<div id="totop-btn">
+					<i class="icon-scroll" onclick="topFunction()" title="Go to top"></i>
+				</div>
 			</div>
 		</section>
 

@@ -24,6 +24,28 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.icon-about:before {
+  content: "\e904";
+}
+.icon-contact:before {
+  content: "\e905";
+}
+.icon-projects:before {
+  content: "\e906";
+}
+.icon-scroll:before {
+  content: "\e907";
+}
+.icon-services:before {
+  content: "\e908";
+}
+.icon-skills:before {
+  content: "\e909";
+}
+.icon-logo:before {
+  content: "\e90a";
+}
 .icon-ci:before {
   content: "\e900";
 }
@@ -36,10 +58,43 @@ i {
 .icon-wd:before {
   content: "\e903";
 }
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-address:before {
+  content: "\e94a";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-dribbble:before {
+  content: "\eaa7";
+}
+.icon-behance:before {
+  content: "\eaa8";
+}
+.icon-behance2:before {
+  content: "\eaa9";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
 
 /*Estilos Globales*/
 body{
-  font: 14px 'Montserrat', sans-serif;
+  font: 14px montserrat, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -80,6 +135,49 @@ body{
     display: block;
     margin: 0 auto;
   }
+  /* Tooltip container */
+  .tooltip {
+      position: relative;
+      display: inline-block;
+  }
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: black;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 300;
+      text-align: center;
+      padding: 10px 5px;
+      border-radius: 6px;
+      /* Position the tooltip text */
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 40%;
+      margin-left: -60px;
+      /* Fade in tooltip */
+      opacity: 0;
+      transition: opacity 0.5s;
+  }
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+  }
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 0.8;
+  }
+
 /*Header*/
 header{
   background: rgba(0, 0, 0, 0.4);
@@ -113,10 +211,18 @@ header li{
 }
 #logo{
   float: left;
-  padding-top: 5px;
+  padding: 5px 0 2px 0;
 }
-#logo img{
-  width: 32px;
+#logo a{
+  text-decoration: none;
+}
+#logo i{
+  font-size: 38px;
+  color: white;
+}
+#logo i:hover{
+  color: #00ACED;
+  transition: 200ms;
 }
 nav{
   float: right;
@@ -156,6 +262,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+#about i{
+font-size: 32px;
+}
 p.aboutme{
   color: gray;
   font-size: 16px;
@@ -167,6 +276,10 @@ p.aboutme{
 #services{
   background: #eaeaea;
 }
+#services i.icon-services{
+font-size: 32px;
+}
+
 .bigBox{
   display: flex;
   justify-content: space-between;
@@ -196,6 +309,9 @@ width: 86px;
 #skills{
 background: #f7f7f7;
 }
+#skills i{
+font-size: 32px;
+}
 .bigBox{
   display: flex;
   justify-content: space-between;
@@ -205,48 +321,7 @@ background: #f7f7f7;
   width: 20%;
   margin: 30px 0 30px 0;
 }
-/* Tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: black;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 300;
-    text-align: center;
-    padding: 10px 5px;
-    border-radius: 6px;
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 40%;
-    margin-left: -60px;
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 0.8;
-}
+
 
 /*Hire me*/
 #hireme{
@@ -273,6 +348,210 @@ background: #f7f7f7;
   color: white;
 }
 
+/*Portfolio*/
+#portfolio{
+  background: #eaeaea;
+  text-align: center;
+}
+#portfolio i{
+font-size: 32px;
+}
+.navPortolio{
+  margin: 30px 0;
+}
+.navPortolio button{
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #5F5F5F;
+}
+.navPortolio button:hover{
+  color: #151515;
+}
+.navPortolio button:focus{
+  color: #00ACED;
+  outline: none;
+}
+.navPortolio span{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #151515;
+  font-weight: 700;
+}
+.portfolioBox{
+  display: inline-block;
+  width: 33%;
+  height: 300px;
+  background: #82827F;
+  margin: 0px 0 0 0;
+}
+.portfolioBox:hover{
+  background-color: #00ACED;
+  transition: 500ms;
+}
+
+/*Contact*/
+#contact{
+  background-color: #515151;
+  background-image: url("../images/map-image.png");
+  color: white;
+  background-position: center;
+  /*background-size: contain;*/
+  background-repeat: no-repeat;
+}
+#contact i{
+font-size: 26px;
+}
+.ContactDescription{
+font-size: 21px;
+margin-bottom: 5px;
+}
+.contactLeft input
+{
+  width: 92%;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px white solid;
+  border-radius: 8px;
+  background: rgba(255 ,255 ,255 , 0.4);
+  color: white;
+}
+.contactLeft input:focus
+{
+  border: 1px #00ACED solid;
+  outline: none;
+  background: rgba(255 ,255 ,255 , 0.5);
+  box-shadow: 0 0 5px #00ACED;
+}
+.contactLeft{
+  float:left;
+
+  width: 49%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.contactLeft p{
+text-align: left;
+font-size: 16px;
+font-weight: 300;
+margin: 8px 0 5px 0;
+}
+
+.contactLeft .chiquito{
+font-size: 12px;
+color: #ccc;
+margin: 3px 0 8px 0;
+}
+.buttonContact{
+  width: 100%;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+  border-style: none;
+  border-radius: 32px;
+  background: #00ACED;
+  color: white;
+  cursor: pointer;
+}
+.buttonContact:hover{
+  background: #009ed8;
+}
+.contactRight{
+  float: right;
+  width: 49%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.contactRight textarea
+{
+  margin-top: 32px;
+  width: 92%;
+  font-family: montserrat, sans-serif;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px white solid;
+  border-radius: 8px;
+  background: rgba(255 ,255 ,255 , 0.4);
+  color: white;
+}
+.contactRight textarea:focus
+{
+  border: 1px #00ACED solid;
+  outline: none;
+  background: rgba(255 ,255 ,255 , 0.5);
+  box-shadow: 0 0 5px #00ACED;
+}
+
+/*Social*/
+#social{
+  background: #3B3B3B;
+}
+.socialIconsContainer{
+  margin: 30px auto;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+.socialIconsContainer a{
+  color: white;
+  text-decoration: none;
+}
+.socialIconsContainer i{
+  font-size: 28px;
+}
+.socialIconsContainer i:hover{
+  color: #00ACED;
+    transition: 200ms;
+}
+.infoContact p{
+  display: inline-block;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 5px 0;
+}
+.infoContact a{
+  color: #00ACED;
+  text-decoration: none;
+}
+.infoContact i{
+  color: white;
+  font-size: 16px;
+}
+
+#totop-btn{
+  display: inline-block;
+  margin: 30px 0;
+  color: white;
+  cursor: pointer;
+}
+#totop-btn:hover{
+  color: #00ACED;
+    transition: 200ms;
+}
+#totop-btn i{
+  font-size: 32px;
+}
+
+/*Footer*/
+footer{
+  background: black;
+  color: white;
+  font-weight: 300;
+}
+.copyLeft{
+  float: left;
+}
+.copyRight{
+  float: right;
+}
+.copyRight span{
+color: red;
+}
 
 /*RESPONSIVE*/
 @media screen and (max-width: 640px){
@@ -320,9 +599,9 @@ background: #f7f7f7;
   }
 }
 
+
+
 #skill-progress {
-  margin: 20px;
   width: 200px;
   height: 200px;
-  position: relative;
 }
