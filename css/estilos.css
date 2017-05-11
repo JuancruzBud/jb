@@ -110,16 +110,6 @@ body{
   overflow: hidden;
   text-align: center;
 }
-.button{
-  width: 87px;
-  padding: 15px 28px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.3);
-  color:white;
-  font-size: 16px;
-  border-radius: 24px;
-  text-decoration: none;
-  }
   p.sectionNumber{
     color:gray;
     font-weight: 700;
@@ -254,6 +244,19 @@ flex-direction: column;
 justify-content: flex-end;
 text-align: center;
 }
+.button{
+  width: 87px;
+  padding: 15px 28px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+  color:white;
+  font-size: 16px;
+  border-radius: 24px;
+  text-decoration: none;
+  }
+  .button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    }
 
 /*About*/
 #about{
@@ -339,6 +342,9 @@ font-size: 32px;
   border-radius: 24px;
   text-decoration: none;
   }
+  #hireme .button-h:hover{
+    background: rgba(255, 255, 255, 0.5);
+    }
 #hireme h3{
   padding: 20px 0 10px 0;
   margin-bottom: 20px;
