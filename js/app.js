@@ -1,3 +1,20 @@
+function openNav() {
+    document.getElementById("mySidenav").style.width = "260px";
+    document.getElementById("cover").style.marginLeft = "-260px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("cover").style.marginLeft= "0";
+}
+
+
+
+// Animacion menu de hamburgesa
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
 // Transiciones de scroll para botones del body
 $('#read-more-btn').click(function (event) {
   event.stopPropagation();
@@ -19,6 +36,40 @@ $('#totop-btn').click(function (event) {
   jQuery('html, body').animate({ scrollTop: Position }, 1100);
   return false;
 });
+// smoothscroll para sidebar
+$('#about-btn2').click(function (event) {
+  event.stopPropagation();
+  var Position = jQuery('[id="about"]').offset().top;
+  jQuery('html, body').animate({ scrollTop: Position }, 1100);
+  return false;
+});
+$('#services-btn2').click(function (event) {
+  event.stopPropagation();
+  var Position = jQuery('[id="services"]').offset().top;
+  jQuery('html, body').animate({ scrollTop: Position }, 1100);
+  return false;
+});
+$('#skills-btn2').click(function (event) {
+  event.stopPropagation();
+  var Position = jQuery('[id="skills"]').offset().top;
+  jQuery('html, body').animate({ scrollTop: Position }, 1100);
+  return false;
+});
+$('#portfolio-btn2').click(function (event) {
+  event.stopPropagation();
+  var Position = jQuery('[id="portfolio"]').offset().top;
+  jQuery('html, body').animate({ scrollTop: Position }, 1100);
+  return false;
+});
+$('#contact-btn2').click(function (event) {
+  event.stopPropagation();
+  var Position = jQuery('[id="contact"]').offset().top;
+  jQuery('html, body').animate({ scrollTop: Position }, 1100);
+  return false;
+});
+
+
+
 
 
 $('nav li a').on('click', function(){

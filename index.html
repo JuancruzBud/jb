@@ -33,8 +33,26 @@
 							<li class="navItem"><a id="contact-btn" href="#contact">Contact</a></li>
 						</ul>
 					</nav>
+
+					<div class="hamburger" onclick="openNav()">
+					  <div class="bar1"></div>
+					  <div class="bar2"></div>
+					  <div class="bar3"></div>
+					</div>
+
 				</div>
 			</header>
+
+			<div id="mySidenav" class="sidenav">
+				<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+				<a id="about-btn2" href="#about">About</a>
+				<a id="services-btn2" href="#services">Services</a>
+				<a id="skills-btn2" href="#skills">Skills</a>
+				<a id="portfolio-btn2" href="#portfolio">Portfolio</a>
+				<a id="contact-btn2" href="#contact">Contact</a>
+
+
+			</div>
 
 			<section id="welcome">
 				<div class="container3">
@@ -126,6 +144,7 @@
 				<h2>Some Projects:</h2>
 				<i class="icon-projects"></i>
 				<div class="navPortolio">
+
 					<button type="button" class="navPortfolioItem">all</button><span>/</span>
 					<button type="button" class="navPortfolioItem">identity</button><span>/</span>
 					<button type="button" class="navPortfolioItem">product design</button><span>/</span>
@@ -133,12 +152,48 @@
 					<button type="button" class="navPortfolioItem">web design</button>
 				</div>
 			</div>
-			<div class="portfolioBox"></div>
-			<div class="portfolioBox"></div>
-			<div class="portfolioBox"></div>
-			<div class="portfolioBox"></div>
-			<div class="portfolioBox"></div>
-			<div class="portfolioBox"></div>
+			<div class="pBoxcontainer">
+			  <img class="pImg" src="images/bg.jpg" class="image">
+			  <div class="overlay">
+			    <div class="text">
+						<a href="#">project name #1</a>
+						<p class="">product design</p>
+					</div>
+			  </div>
+			</div>
+			<div class="pBoxcontainer">
+			  <img class="pImg" src="images/bg.jpg" class="image">
+			  <div class="overlay">
+			    <div class="text"><a href="#">Hello World</a></div>
+			  </div>
+			</div>
+			<div class="pBoxcontainer">
+			  <img class="pImg" src="images/bg.jpg" class="image">
+			  <div class="overlay">
+			    <div class="text"><a href="#">Hello World</a></div>
+			  </div>
+			</div>
+			<div class="pBoxcontainer">
+			  <img class="pImg" src="images/bg.jpg" class="image">
+			  <div class="overlay">
+			    <div class="text"><a href="#">Hello World</a></div>
+			  </div>
+			</div>
+			<div class="pBoxcontainer">
+			  <img class="pImg" src="images/bg.jpg" class="image">
+			  <div class="overlay">
+			    <div class="text"><a href="#">Hello World</a></div>
+			  </div>
+			</div>
+			<div class="pBoxcontainer">
+			  <img class="pImg" src="images/bg.jpg" class="image">
+			  <div class="overlay">
+			    <div class="text"><a href="#">Hello World</a></div>
+			  </div>
+			</div>
+
+
+			<!-- <div class="portfolioBox"></div> -->
 		</section>
 
 		<section id="contact">
@@ -213,8 +268,9 @@
 	</body>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/progressbar.js"></script>
+	<!-- <script type="text/javascript" src="js/progressbar.js"></script> -->
 	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 
 </html>
