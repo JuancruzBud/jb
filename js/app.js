@@ -1,11 +1,11 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "260px";
-    document.getElementById("cover").style.marginLeft = "-260px";
+    document.getElementById("header").style.marginLeft = "-260px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("cover").style.marginLeft= "0";
+    document.getElementById("header").style.marginLeft= "0";
 }
 
 

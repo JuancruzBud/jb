@@ -317,8 +317,8 @@ nav{
   margin-left: 50px;
 }
 
-#cover {
-    transition: margin-left .5s;
+#header {
+  transition: margin-left .5s;
 }
 
 @media screen and (max-height: 450px) {
