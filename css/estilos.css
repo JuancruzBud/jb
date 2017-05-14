@@ -763,9 +763,14 @@ footer{
     width: 100%;
   }
   .servicesBox{
-    width: 100%;
+    width: 99%;
     margin-bottom: 0;
   }
+  .skillsBox{
+    width: 99%;
+    margin-bottom: 0;
+  }
+
 }
 @media screen and (max-width: 600px){
   #hireme{
