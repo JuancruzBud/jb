@@ -262,6 +262,7 @@ nav{
   background-color: #333;
   margin: 5px 0;
   transition: 0.4s;
+  transition-delay: 0.2s;
 }
 /* Rotate first bar */
 .change .bar1 {
@@ -711,7 +712,7 @@ footer{
   float: right;
 }
 .copyRight span{
-color: red;
+  color: red;
 }
 
 /*RESPONSIVE*/
