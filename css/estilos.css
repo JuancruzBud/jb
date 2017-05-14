@@ -635,7 +635,7 @@ font-weight: 300;
   width: 92%;
   font-family: montserrat, sans-serif;
   font-size: 18px;
-  padding: 20px;
+  padding: 20px 0 0 20px;
   border: 1px darkgray solid;
   border-radius: 8px;
   background: rgba(255 ,255 ,255 , 0.4);
@@ -762,13 +762,21 @@ footer{
   .pBoxcontainer {
     width: 100%;
   }
+  .servicesBox{
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 @media screen and (max-width: 600px){
   #hireme{
   height: 180px;
   }
 }
-
+@media screen and (max-width: 560px){
+  .copyRight, .copyLeft{
+  float: none;
+  }
+}
 @media screen and (max-width: 440px){
 .socialIconsContainer{
   width: 100%;
