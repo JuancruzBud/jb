@@ -1,18 +1,16 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "260px";
-    document.getElementById("header").style.marginLeft = "-260px";
+  document.getElementById("mySidenav").style.width = "260px";
+  document.getElementById("header").style.marginLeft = "-260px";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("header").style.marginLeft= "0";
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("header").style.marginLeft= "0";
 }
-
-
 
 // Animacion menu de hamburgesa
 function myFunction(x) {
-    x.classList.toggle("change");
+  x.classList.toggle("change");
 }
 
 // Transiciones de scroll para botones del body

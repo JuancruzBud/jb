@@ -266,17 +266,17 @@ nav{
 }
 /* Rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-7px, 6px) ;
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-7px, 6px) ;
 }
 /* Fade out the second bar */
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
 /* Rotate last bar */
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 
@@ -403,15 +403,16 @@ p.aboutme{
   font-size: 32px;
   color: gray;
 }
-
 .bigBox{
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: center;*/
 }
 .servicesBox{
   display: inline-block;
-  width: 20%;
+  width: 24%;
   margin: 30px 0 30px 0;
+  padding-top: 1.67em;
+  border: 1px solid gainsboro;
 }
 .servicesBox img{
   width: 86px;
@@ -420,6 +421,7 @@ p.aboutme{
   color: grey;
   font-weight: normal;
   font-size: 14px;
+  padding: 0 25px;
 }
 #services .servicesBox{
   color: #474747;
@@ -437,13 +439,9 @@ p.aboutme{
   font-size: 32px;
   color: gray;
 }
-.bigBox{
-  display: flex;
-  justify-content: space-between;
-}
 .skillsBox{
   display: inline-block;
-  width: 20%;
+  width: 24%;
   margin: 30px 0 30px 0;
 }
 
@@ -539,6 +537,7 @@ p.aboutme{
   color: white;
   font-size: 21px;
   position: absolute;
+  width: 90%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -575,12 +574,14 @@ font-weight: 300;
   width: 92%;
   font-family: montserrat, sans-serif;
   font-size: 18px;
-  padding: 20px;
+  padding-left: 20px;
+  height: 63px;
   border: 1px darkgray solid;
   border-radius: 8px;
   background: rgba(255 ,255 ,255 , 0.4);
   color: white;
 }
+
 .contactLeft input:focus
 {
   border: 1px #00ACED solid;
@@ -590,7 +591,7 @@ font-weight: 300;
 }
 .contactLeft{
   float:left;
-
+  text-align: left;
   width: 49%;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -716,15 +717,61 @@ footer{
 }
 
 /*RESPONSIVE*/
+@media screen and (max-width: 1024px){
+  .container2{
+    width: 70%;
+  }
+  .container{
+  width: 80%;
+  }
+  .servicesBox{
+    width: 49%;
+    margin-bottom: 0;
+  }
+  .skillsBox{
+    width: 49%;
+    margin-bottom: 0;
+  }
+  .skillsBox img{
+    width: 200px;
+  }
+  .bigBox{
+  margin-bottom: 30px;
+  }
+  .pBoxcontainer {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 768px){
+  .contactLeft, .contactRight{
+  float: none;
+  margin: 30px auto 50px;
+  width: 98%;
+  }
+}
 @media screen and (max-width: 640px){
   .container,.container2{
-    width: 90%;
+    width: 80%;
   }
   nav{
   display: none;
   }
   .hamburger{
   display: inline-block;
+  }
+  .pBoxcontainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px){
+  #hireme{
+  height: 180px;
+  }
+}
+
+@media screen and (max-width: 440px){
+.socialIconsContainer{
+  width: 100%;
   }
 }
 
