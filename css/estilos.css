@@ -448,9 +448,9 @@ p.aboutme{
 /*Hire me*/
 #hireme{
   text-align: center;
-  background-image: -moz-linear-gradient( 2deg, rgb(0,156,255) 0%, rgb(26,225,117) 100%);
-   background-image: -webkit-linear-gradient( 2deg, rgb(0,156,255) 0%, rgb(26,225,117) 100%);
-   background-image: -ms-linear-gradient( 2deg, rgb(0,156,255) 0%, rgb(26,225,117) 100%);
+  background-image: url("../images/bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   height: 140px;
 }
 #hireme .button-h{
@@ -559,7 +559,7 @@ font-weight: 300;
   background-image: url("../images/map-image.png");
   color: white;
   background-position: center;
-  /*background-size: contain;*/
+  /* background-size: contain; */
   background-repeat: no-repeat;
 }
 #contact i{
